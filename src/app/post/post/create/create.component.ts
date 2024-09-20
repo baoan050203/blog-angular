@@ -32,7 +32,7 @@ export class CreateComponent {
     console.log(this.form.value);
     this.postService.create(this.form.value).subscribe((res:any)=>{
       alert("post success.");
-      // this.router.navigateByUrl('post/index');
+      this.router.navigateByUrl('post/index');
     })
   }
 
